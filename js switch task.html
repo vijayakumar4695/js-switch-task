@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+	<html>
+	<title>Today Date</title>
+	<style>
+		
+		.container-fluid {
+			text-align: center;
+			margin-top: 80px;
+			border:1px solid black;
+			height: 200px;
+			width: 400px;
+			margin-left: 500px;
+			background: green;
+
+		}
+		.btn {
+			width: 150px;
+			height: 40px;
+			font-size: 20px;
+			margin-top: 30px;
+			background: red;
+		}
+#demo {
+	text-align: center;
+	font-size: 18px;
+	color:yellow;
+
+}		
+
+	</style>
+	<body>
+       <div class="container-fluid">
+       	<div class="row">
+       		<div class="col-lg-12 col-md-12 col-sm-12">
+       			<h2>TODAY DATE</h2>
+
+		<button type="button" onclick="myFunction()" class="btn btn-dark">CLICK</button>
+		
+	
+
+<p id="demo"></p>
+
+</div>
+</div>
+</div>
+		
+<script>
+	var day;
+    
+	function myFunction() {
+	switch(new Date().getDay()) {
+		case  0:
+		day = "Sunday";
+		break;
+		case 1:
+		day = "Monday";
+		break;
+		case 2:
+		day ="Tuesday";
+		break;
+		case 3:
+		day = "Wenesday";
+		break;
+		case 4:
+		day = "Thursday"
+		break;
+		case 5:
+		day = "Friday";
+		break;
+		case 6:
+		day = "Saturday";
+		break;
+
+	}
+
+
+	document.getElementById("demo").innerHTML= "Today is :" + day;
+}
+</script>
+</body>
+</html>
